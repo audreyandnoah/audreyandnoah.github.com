@@ -270,7 +270,7 @@
 .sl-slide-color-1.sl-slide h2,
 .sl-slide-color-1.sl-slide h3,
 .sl-slide-color-1.sl-slide blockquote{
-	color: #000;
+	color: #fff;
 	
 }
 
@@ -306,7 +306,7 @@
 
 .sl-slide-color-3.sl-slide h2,
 .sl-slide-color-3.sl-slide blockquote{
-	color: #000;
+	color: #fff;
 	text-shadow: 1px 1px 1px rgba(0,0,0,0.1);
 }
 
