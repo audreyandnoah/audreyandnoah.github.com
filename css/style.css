@@ -1,8 +1,20 @@
+@font-face {
+    font-family:'respectiveregular';
+    src: url('respective-webfont.eot');
+    src: url('respective-webfont.eot?#iefix') format('embedded-opentype'),
+         url('respective-webfont.woff') format('woff'),
+         url('respective-webfont.ttf') format('truetype'),
+         url('respective-webfont.svg#respectiveregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
 .sl-slider {
 	position: absolute;
 	top: 0;
 	left: 0;
-	font-family: 'Montserrat', Arial, sans-serif;
+	font-family: 'respectiveregular', Arial, sans-serif;
 	color:#FFF;
 }
 
@@ -166,26 +178,27 @@
 
 .sl-slide h2, .sl-slide h3 {
 	color: #FFF;
+	margin-top:25px;
 	text-shadow: 0 0 1px #000;
 	padding: 20px;
 	text-align: center;
-	font-size: 46px;
-	font-weight: 300;
+	font-size: 100px;
+	font-weight: 500;
 	letter-spacing: 13px;
-	text-transform: uppercase;
-	width: 80%;
+	width: 100%;
 	left: 10%;
 	text-align: center;
 	line-height: 50px;
 	bottom: 50%;
 	margin-left: auto;
 	margin-right: auto;
-	font-family:"Renaissance";
+	font-family:'respectiveregular';
 }
 
 .sl-slide h3 {
-  font-size:23px;
-  margin-top:-40px;
+  font-size:40px;
+  padding:20px;
+  margin-top:-20px;
   
 }
 
@@ -245,7 +258,7 @@
 /* Color 1 slides */
 .sl-slide-color-1 .sl-content-cut,
 .sl-slide-color-1 .sl-content {
-	background: #8d0f39;
+
 }
 
 .sl-slide-color-1 [data-icon]:after {
@@ -255,8 +268,10 @@
 }
 
 .sl-slide-color-1.sl-slide h2,
+.sl-slide-color-1.sl-slide h3,
 .sl-slide-color-1.sl-slide blockquote{
-	color: #fff;
+	color: #000;
+	
 }
 
 .sl-slide-color-1.sl-slide blockquote:before {
@@ -266,7 +281,7 @@
 /* Color 2 slides */
 .sl-slide-color-2 .sl-content-cut,
 .sl-slide-color-2 .sl-content {
-	background: #ade1f4;
+
 }
 
 .sl-slide-color-2 [data-icon]:after {
@@ -287,7 +302,6 @@
 /* Color 3 slides */
 .sl-slide-color-3 .sl-content-cut,
 .sl-slide-color-3 .sl-content {
-	background: #ffeb41;
 }
 
 .sl-slide-color-3.sl-slide h2,
