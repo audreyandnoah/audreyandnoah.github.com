@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+		<meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
+        <title>Audrey and Noah's Wedding</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+        <meta name="description" content="Fullscreen Slit Slider with CSS3 and jQuery" />
+        <meta name="keywords" content="fullscreen, slideshow, slider, slit, opens, cuts, css3, jquery, transition, animation, jquery, tutorial, web development, component, plugin" />
+        <meta name="author" content="Codrops" />
+        <link rel="shortcut icon" href="../favicon.ico"> 
+		<link href='http://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css' />
+        <link rel="stylesheet" type="text/css" href="css/demo.css" />
+        <link rel="stylesheet" type="text/css" href="css/style.css" />
+        <link rel="stylesheet" href="stylesheet.css" type="text/css" charset="utf-8" />
+
+
+		<!--[if lt IE 9]>
+			<script type="text/javascript" src="js/modernizr.custom.04022.js"></script> 
+		<![endif]-->
+		<!--[if lt IE 8]>
+			<style>.ie-note{display:block;}</style>
+		<![endif]-->
+		<noscript>
+			<link rel="stylesheet" type="text/css" href="css/styleNoJS.css" />
+		</noscript>
+    </head>
+    <body>
+        <div class="container">
+			
+			<section id="sl-slider" class="sl-slider">
+			
+				<div class="sl-slide" data-orientation="horizontal" data-cut1-rotation="-25" data-cut2-rotation="-25" data-cut1-scale="2" data-cut2-scale="2">
+					<center><h2>Audrey and Noah's Wedding </h2></center>
+					<h3><center>June 22, 2013 <BR>Martha's Vineyard, MA</center></h3>				
+				</div>
+				
+				<div class="sl-slide sl-slide-dark" data-orientation="vertical" data-cut1-rotation="10" data-cut2-rotation="-15" data-cut1-scale="1.5" data-cut2-scale="1.5">
+					<center><h2 style="color:#FFF"> Accommodation </h2></center>
+					<h3><center>More Text Will Go Here</center></h3>
+                    				</div>
+				
+				<div class="sl-slide sl-slide-color-1" data-orientation="horizontal" data-cut1-rotation="3" data-cut2-rotation="3" data-cut1-scale="2" data-cut2-scale="1">
+					<h2>Getting Here</h2>
+                    <h3><center>More Text Will Go Here</center></h3>
+				</div>
+				
+				<div class="sl-slide sl-slide-color-2" data-orientation="vertical" data-cut1-rotation="-5" data-cut2-rotation="25" data-cut1-scale="2" data-cut2-scale="1">
+					<h2>Things To Do</h2>
+					<h3><center>More Text Will Go Here</center></h3>	
+                    			</div>
+				
+					<div class="sl-slide sl-slide-color-3" data-orientation="horizontal" data-cut1-rotation="-5" data-cut2-rotation="10" data-cut1-scale="2" data-cut2-scale="1">
+						<h2>Wedding Day</h2>
+						<h3><center>More Text Will Go Here</center></h3>
+					</div>
+			
+			</section>
+			
+        </div>
+		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+		<script type="text/javascript" src="js/jquery.ba-cond.min.js"></script>
+		<script type="text/javascript" src="js/jquery.transit.min.js"></script>
+		<script type="text/javascript" src="js/jquery.slitslider.js"></script>
+			<script type="text/javascript" src="jquery.backstretch.js"></script>
+				<script type="text/javascript" src="grunt.js"></script>
+
+		<script type="text/javascript">	
+			
+			$(function() {
+			
+				$( '#sl-slider' ).slitslider();
+				$(".sl-slide").backstretch("MV0.jpg");
+				$(".sl-slide.sl-slide-dark").backstretch("Mv2small.jpg");
+				$(".sl-slide.sl-slide-color-1").backstretch("Getting.jpg");
+				$(".sl-slide.sl-slide-color-2").backstretch("MV3.jpg");
+				$(".sl-slide.sl-slide-color-3").backstretch("MV4.jpg");
+	
+				
+				
+					});
+			
+			
+		</script>
+	
+
+		
+	
+	</body>
+</html>

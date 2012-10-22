@@ -1,0 +1,115 @@
+body {
+
+margin:0;
+
+padding:0;
+
+width: 100%;
+
+}
+
+h1 {
+
+padding-left: 100px;
+
+font:bold 14px/1.5em "Trebuchet MS", Trebuchet, Arial, Verdana, Sans-serif;
+
+text-transform:uppercase;
+
+}
+
+</style>
+
+
+
+<style type="text/css">
+
+/* The placement of the div object in the web page */
+
+div.rotator {
+
+
+height:100%;
+width:100%;
+
+
+display: none;
+
+}
+
+/* Style for the rotator */
+
+div.rotator ul li {
+
+float:left;
+
+position:absolute;
+
+list-style: none;
+
+}
+
+/* Style for the image displayed */
+
+div.rotator ul li img {
+
+border:1px solid #ccc;
+
+padding: 4px;
+
+background: #FFF;
+
+}
+
+div.rotator ul li.show {
+
+z-index:500
+
+}
+
+
+/* Navigation arrows */
+
+
+nav span {
+	position: fixed;
+	z-index: 2000;
+	top: 50%;
+	width: 80px;
+	height: 80px;
+	border: 4px dashed #ddd;
+	border: 4px dashed rgba(150,150,150,0.4);
+	border-color:#000;
+	text-indent: -90000px;
+	margin-top: -40px;
+	cursor: pointer;
+	color:#000;
+	
+	-webkit-transform: rotate(45deg);
+	-moz-transform: rotate(45deg);
+	-o-transform: rotate(45deg);
+	-ms-transform: rotate(45deg);
+	transform: rotate(45deg);
+	
+	-webkit-transition: all 0.3s ease-in-out;
+	-moz-transition: all 0.3s ease-in-out;
+	-o-transition: all 0.3s ease-in-out;
+	-ms-transition: all 0.3s ease-in-out;
+	transition: all 0.3s ease-in-out;
+}
+
+nav span:hover {
+	border-color: rgba(150,150,150,0.9);
+}
+
+nav span.sl-prev {
+	left: 60px;
+	border-right: none;
+	border-top: none;
+}
+
+nav span.sl-next {
+	right: 60px;
+	border-left: none;
+	border-bottom: none;
+}
